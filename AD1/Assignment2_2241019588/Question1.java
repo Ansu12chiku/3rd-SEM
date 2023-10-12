@@ -1,4 +1,4 @@
-package Assignment2;
+package AD1.Assignment2_2241019588;
 import java.util.*;
 public class Question1
 {

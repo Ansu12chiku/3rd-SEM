@@ -1,5 +1,4 @@
-package Assignment2;
-
+package AD1.Assignment2_2241019588;
 import java.util.Scanner;
 
 public class Question8
@@ -13,22 +12,29 @@ public class Question8
         System.out.println("enter the numbers in the array");
         for (int i = 0; i <n; i++)
             arr[i]=obj.nextInt();
-        System.out.println("The Smallest missing positive no. is "+Missing(arr,1));  
+        System.out.println("The Smallest missing positive no. is "+Missing(arr,1)); 
+        //System.out.println(search(arr, 0, n-1, 10)); 
     }
     public static int Missing(int[] a,int x)
     {
-        if(x==a.length)
-            return a.length;
-        if(!search(a,x,0))
+        
+        if(!search(a,0,a.length-1,x))
             return x;
+        if(x==a.length)
+            return x+1;
         return Missing(a, x+1);        
     }
-     public static boolean search(int[] a,int x,int i)
+     public static boolean search(int[] arr,int l,int r,int x)
      {
-        if(a[i]==x-1)
-            return true;
-        if(i==a.length-1)
+        if (r < l)
             return false;
-        return search(a,x+1,i+1);  
+ 
+        if (arr[l] == x)
+            return true;
+ 
+        if (arr[r] == x)
+            return true;
+
+        return search(arr,l+1,r-1,x);  
      } 
 }

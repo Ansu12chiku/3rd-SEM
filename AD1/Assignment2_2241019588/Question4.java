@@ -1,7 +1,5 @@
-package Assignment2;
-
-import java.util.Scanner;
-
+package AD1.Assignment2_2241019588;
+import java.util.*;
 public class Question4 
 {
     public static void main(String[] args) {
