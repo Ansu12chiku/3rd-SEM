@@ -13,7 +13,6 @@ public class Question8
         for (int i = 0; i <n; i++)
             arr[i]=obj.nextInt();
         System.out.println("The Smallest missing positive no. is "+Missing(arr,1)); 
-        //System.out.println(search(arr, 0, n-1, 10)); 
     }
     public static int Missing(int[] a,int x)
     {
