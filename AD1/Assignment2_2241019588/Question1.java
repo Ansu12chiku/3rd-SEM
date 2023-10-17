@@ -1,3 +1,5 @@
+// Question-1:
+//sum of n numbers in an array using recursion:
 package AD1.Assignment2_2241019588;
 import java.util.*;
 public class Question1
@@ -20,3 +22,12 @@ public class Question1
         return (Sum(arr,n-1)+arr[n-1]);
     }
 }
+/*pseudocode :
+ * Make an arrray of size n
+ * Take Input in the array
+ * make a function sum()
+ * if n<=0 
+ *      rerturn 0
+ *      return (sum(arr,n-1)+arr[n-1]);
+ * print sum() as result
+ */

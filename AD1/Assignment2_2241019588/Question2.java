@@ -1,3 +1,5 @@
+// Question-2:
+//.Finding maximum and minimum in an arrayin an array using recursion:
 package AD1.Assignment2_2241019588;
 import java.util.*;
 public class Question2 
@@ -30,3 +32,16 @@ public class Question2
         return Math.max(a[n-1],Max(a, n-1));
     }
 }
+/*pseudocode :
+ * Make an arrray of size n
+ * Take Input in the array
+ * make a function Min() to find the minimum
+ *     if(n == 1) 
+            return a[0]; 
+        return Math.min(a[n-1], Min(a, n-1));
+ * make a function Max() to find the maximum
+ *      if(n == 1) 
+            return a[0]; 
+        return Math.max(a[n-1],Max(a, n-1));
+ * print Min() and Max()as result
+ */

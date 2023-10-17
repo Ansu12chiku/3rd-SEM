@@ -1,3 +1,5 @@
+// Question-8:
+//Smallest positive missing number in an array using recursion :
 package AD1.Assignment2_2241019588;
 import java.util.Scanner;
 
@@ -26,14 +28,17 @@ public class Question8
      public static boolean search(int[] arr,int l,int r,int x)
      {
         if (r < l)
-            return false;
- 
+            return false; 
         if (arr[l] == x)
-            return true;
- 
+            return true; 
         if (arr[r] == x)
             return true;
-
         return search(arr,l+1,r-1,x);  
      } 
 }
+/* * pseudocode :
+ * Make an arrray of size n
+ * Take Input in the array
+ * search from 1 in the array in a Missing function
+ *      make a boolean search() for searching the number in the array
+ */

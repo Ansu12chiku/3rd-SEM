@@ -1,3 +1,5 @@
+// Question-6:
+//Conversion from decimal to hexadecimal numbers using recursion:
 package AD1.Assignment2_2241019588;
 import java.util.*;
 public class Question6 
@@ -26,3 +28,18 @@ public class Question6
         
     }
 }
+/*Pseudocode :
+* enter a nonnegative number n
+* create a static char array
+* create a static string strHex
+* Create a Fucntion DectoHex()
+    if(dec == 0) 
+            return strHex; 
+
+            int num = dec % 16
+            strHex = hexChar[num] + strHex
+            dec = dec / 16
+            DectoHex(dec)
+    return strHex
+*print strHex
+*/

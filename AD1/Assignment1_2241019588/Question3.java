@@ -27,7 +27,20 @@ public class Question3
         }
         System.out.println("The Rotated array is : ");
         for (int i = 0; i <n; i++)
-            System.out.println(arr[i]+" ");  
-    }
-   
+            System.out.print(arr[i]+" ");  
+    }   
 }
+/* Pseudocode :
+ * Make an arrray of size n
+ * Take Input in the array
+ * Take value of k
+ * use k%n and assign to k
+ * for i = 1 to k do
+ *  assign temp=arr[0]
+ *  for j = 1 to n-1 do
+ *  then shift all element by left one position
+ *  assign temp to the last element of the array
+ *  end for
+ *  end for
+ *  print the rotated array 
+ */

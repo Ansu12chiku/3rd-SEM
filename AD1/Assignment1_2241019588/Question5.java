@@ -1,4 +1,4 @@
-// Question-1:
+// Question-5:
 //Smallest positive missing number in an array using an iterative approach:
 package AD1.Assignment1_2241019588;
 import java.util.*;
@@ -33,3 +33,13 @@ public class Question5
               
     }
 }
+/* Pseudocode :
+ * Make an arrray of size n
+ * Take Input in the array
+ * initialize found as a boolean
+ * for i = 1  do
+ *      for j=0 to j<n do
+ *        search for i in tha array
+ *  if found then j++
+ * if not found then print i as smallest positive missing number  
+ */

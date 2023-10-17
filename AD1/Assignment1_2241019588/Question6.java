@@ -1,3 +1,5 @@
+// Question-6:
+//Sort the array in maximum minimum... in an array using an iterative approach:
 package AD1.Assignment1_2241019588;
 import java.util.*;
 public class Question6 
@@ -37,6 +39,21 @@ public class Question6
         }
         System.out.println("new max min sort array is :");
         for (int i = 0; i <n; i++)
-            System.out.println(temp[i]+ " ");  
+            System.out.print(temp[i]+ " ");  
     }
 }
+/* * Pseudocode :
+ * Make an arrray of size n
+ * Take Input in the array
+ * Sort the array
+ * make a temp array of n size
+ * for i=0,j=0,k=n-1  to i<n-1 do
+ * if(i%2==0)
+ *      temp[i]=arr[k]
+ *        k--
+ * else
+ *      temp[i]=arr[j]
+ *      j++
+ * end for
+ * print the array
+ */

@@ -18,3 +18,13 @@ public class Question7
         System.out.println("The factorial is "+fact);
     }
 }
+/*
+ * Pseudocode :
+ * enter a nonnegative number n
+ * initialize fact as 1
+ * while n>0 do
+ *      fact=fact*n;
+ *      n=n-1;
+ * end while
+ * print fact as result
+ */

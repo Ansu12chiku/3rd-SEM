@@ -1,3 +1,5 @@
+// Question-7 :
+//Computing nth power of a number using recursion:
 package AD1.Assignment2_2241019588;
 import java.util.*;
 public class Question7 
@@ -17,3 +19,13 @@ public class Question7
         return n*(findPower(n, p-1));
     }
 }
+/*Pseudocode :
+* enter a nonnegative number n
+* enter the power
+* 
+* Create a Fucntion findPower()
+    if(p==0)
+            return 1
+        return n*(findPower(n, p-1))
+*print  findPower()
+*/

@@ -28,7 +28,7 @@ public class Question2
     }
 }
 /*
- * pseudocode :
+ * Pseudocode :
  * Make an arrray of size n
  * Take Input in the array
  * for i = 1 to n- 1 do

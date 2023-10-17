@@ -1,3 +1,5 @@
+// Question-3:
+//Factorial of a number using recursion:
 package AD1.Assignment2_2241019588;
 
 import java.util.Scanner;
@@ -18,3 +20,11 @@ public class Question3
         return x*Fact(x-1);
     }
 }
+/*Pseudocode :
+* enter a nonnegative number n
+* Create a Fucntion Fact
+     if(x == 0) 
+            return 1;
+        return x*Fact(x-1);
+* print fact() as result
+ */ 

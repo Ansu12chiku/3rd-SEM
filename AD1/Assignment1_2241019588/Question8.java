@@ -1,3 +1,5 @@
+// Question-7:
+//nth Fiboacci number by using an iterative approach:
 package AD1.Assignment1_2241019588;
 import java.util.*;
 public class Question8
@@ -17,3 +19,15 @@ public class Question8
         System.out.println("The "+n+"th fibonacci number is "+sum); 
     }
 }
+/*
+ * Pseudocode :
+ * enter a nonnegative number n
+ * initialize a=0,b=1,sum=1
+ * for i=2 to n-1 do
+ *      sum=a+b
+            a=b
+            b=sum
+        }
+ * end for
+ * print that sum 
+ */

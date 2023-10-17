@@ -1,5 +1,5 @@
 // Question-4:
-//Finding the laargest sum contiguous subarray using an iterative approach:
+//Finding the largest sum contiguous subarray using an iterative approach:
 package AD1.Assignment1_2241019588;
 import java.util.*;
 public class Question4 
@@ -32,7 +32,7 @@ public class Question4
  * Take Input in the array
  * Maxsum=arr[0] (Initialize MaxSum to the first element)
  * currentSum = arr[0] (Initialize currentSum to the first element)
- * for i = 1 to n- 1 do\
+ * for i = 1 to n- 1 do
  *      Choose the maximum between the current element and the sum of the current element and currentSum
         currentSum = max(arr[i], currentSum + arr[i])
         Update maxSum if the currentSum is greater
