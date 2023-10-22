@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 7</title>
+    <style>
+        .dropdownbutton
+        {
+            background-color: rgb(188, 134, 52);
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+            border: 1px;;
+        }
+        .dropdown
+        {
+            position:relative;
+            display: inline-block;
+        }
+        .dropdown-content
+        {
+            display: none;
+            position: relative;
+            background-color: lightbrown;
+            width: 100%;
+            box-shadow: 0px 7px 14px 0px rgba(90, 88, 88, 0.9);
+        }
+        .dropdown-content a
+        {
+            color: black;
+            padding: 12px 6 px;
+            display: block;
+            text-align: center;
+        }
+        .dropdown-content a:hover
+        {
+            background-color: lightblue;
+            color: blue;            
+        }
+        .dropdown:hover .dropdown-content
+        {
+            display: block;
+            background-color: antiquewhite;
+        }
+        .dropdown:hover .dropdownbutton
+        {
+            background-color: lightpink;
+        }
+        .dropdown select option[value="cse"]
+        {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="dropdownbutton">Branch</button>
+        <div class="dropdown-content">
+            <a href="#cse">CSE</a>
+            <a href="#csit">CSIT</a>
+            <a href="#ece">ECE</a>
+            <a href="#eee">EEE</a>
+            <a href="#me">ME</a>
+            <a href="#ce">CE</a>
+        </div>
+    </div>
+</body>
+</html>
