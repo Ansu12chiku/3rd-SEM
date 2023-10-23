@@ -10,7 +10,7 @@ public class Question8
         System.out.println("Enter the n : ");
         int n=obj.nextInt();
         int a=0,b=1,sum=1;
-        for(int i=2;i<n;i++)
+        for(int i=2;i<=n;i++)
         {
             sum=a+b;
             a=b;
