@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 10</title>
+    <style>
+        body 
+        {
+            background-color:azure;
+            padding: 20px;
+        }
+        .form-container 
+        {
+            background-color:silver;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px black;
+            max-width : 450px;
+            margin:10%;            
+        }       
+        .form-label 
+        {
+            display: flex;
+            clear: both;
+            text-align: left;
+        }
+        .form-input 
+        {
+            width: 72%;
+            padding: 10px 5px;
+            border:3px solid blue;
+            border-radius: 5px;
+            font-size: 16px;
+            color: burlywood;
+            margin-top: 10px;
+            
+        }
+        .form-select
+        {
+            width: 100%;
+            padding: 10px;
+            border: 3px solid blue;
+            border-radius: 5px;
+            font-size: 16px;
+            color: blueviolet;
+            
+        }
+        .button 
+        {
+            background-color:darksalmon;
+            color:indianred;
+            text-align:center;
+            border: black;
+            border-radius: 6px;
+            margin-top: 10px;
+            padding: 10px; 
+            font-size: 18px;
+            width: 100%;
+            cursor:pointer;            
+        }
+        .button:hover
+         {
+            background-color:burlywood;
+        }
+        .image
+        {
+            text-align: center;
+            height: 90px;
+        }
+        #h2
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="image">
+        <img src="soa.png" alt="soa logo" class="image">
+        </div>
+        <h2 id="h2">Registration</h2>
+        <form>
+    <div class="form-group">
+        <label for="name" >UserName </label>
+        <input type="text" id="name" class="form-input" placeholder="Enter Name.." required><br>
+        <label for="email" >Email</label>
+        <input type="email" id="email" class="form-input" placeholder="Enter email..." required><br>
+        <label for="mobile" >Mobile</label>
+        <input type="mobile" id="mobile" class="form-input" placeholder="Enter Mobile No..." required><br>
+        
+        <label for="gender" >Gender</label>
+        <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+        <label for="subject" class="form-label">City</label>
+        <select id="subject" class="form-select" required>
+            <option value="">Select City:</option>
+            <option value="bhubaneswar">Bhubaneswar</option>
+            <option value="cuttack">Cuttack</option>
+            <option value="kendrapara">Kendrapra</option>
+        </select>
+    </div >
+    <button type="submit" class="button" >Sign Up</button>
+</form>
+    </div>
+</body>
+</html>

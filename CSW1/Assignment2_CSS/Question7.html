@@ -46,9 +46,29 @@
         {
             background-color: lightpink;
         }
-        .dropdown select option[value="cse"]
+        .list1
         {
-            color: brown;
+            font-style: italic;
+            font-size: 30px;
+        }
+        .list2
+        {
+            font-style: italic;
+            font-size: 30px;
+        }
+        .list3
+        {
+            font-style: italic;
+            font-size: 30px;
+        }
+        .list4
+        {
+            font-style: italic;
+            font-size: 30px;
+        }        
+        .list1, .list2, .list3, .list4 :hover 
+        {
+            background-color:blue;
         }
     </style>
 </head>
@@ -56,12 +76,10 @@
     <div class="dropdown">
         <button class="dropdownbutton">Branch</button>
         <div class="dropdown-content">
-            <a href="#cse">CSE</a>
-            <a href="#csit">CSIT</a>
-            <a href="#ece">ECE</a>
-            <a href="#eee">EEE</a>
-            <a href="#me">ME</a>
-            <a href="#ce">CE</a>
+            <div class="list1">CSE</div>
+            <div class="list2">CSIT</div>
+            <div class="list3">ECE</div>
+            <div class="list4">ME</div>
         </div>
     </div>
 </body>
