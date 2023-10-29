@@ -42,47 +42,49 @@
             border-radius: 5px;
             font-size: 16px;
             color: blueviolet;
+            font-weight: bold;
         }
         .button 
         {
-            background-color: skyblue;
-            color: white;
+            background-color:cornsilk;
+            color: green;
             text-align:center;
             border: black;
             border-radius: 5px;
             padding: 10px 20px;
             font-size: 18px;
             cursor:pointer;
-            
+            text-align: center;
+            margin:10px;
+            width: 90%;            
         }
         .button:hover
-         {
+        {
             background-color: blue;
+            color: white
         }
     </style>
 </head>
 <body>
     <div class="form-container">
-        <h2>Contact Us</h2>
+        <h2 style="text-align: center;">Your Information</h2>
         <form>
             <div class="form-group">
                 <label for="name" class="form-label">Name:</label>
                 <input type="text" id="name" class="form-input" placeholder="Your Name" required>
             </div>
             <div class="form-group">
-                <label for="email" class="form-label">Email:</label>
-                <input type="email" id="email" class="form-input" placeholder="Your Email" required>
+                <label for="regd_no" class="form-label">Regd No. :</label>
+                <input type="regd_no" id="regd_no" class="form-input" placeholder="Your Regd No." required>
             </div>
             <div class="form-group">
-                <label for="subject" class="form-label">Query:</label>
-                <select id="subject" class="form-select" required>
-                    <option value="">Select a Query</option>
-                    <option value="general">General Inquiry</option>
-                    <option value="support">Customer Support</option>
-                    <option value="billing">Billing Questions</option>
-                </select>
-            </div >
-            <button type="submit" class="button" style="text-align: left;" >Submit</button>
+                <label for="subject" class="form-label">Branch:</label>
+                <select id="subject" class="form-select" placeholder="Branch" required>
+                    <option value="cse">CSE</option>
+                    <option value="csit">CSIT</option>
+                    <option value="ece">ECE</option>
+                </select>            
+            <button type="submit" class="button" style="text-align: center;" >Submit</button>
         </form>
     </div>
 </body>
