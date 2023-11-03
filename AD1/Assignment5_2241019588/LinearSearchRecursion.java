@@ -1,4 +1,3 @@
-package Assignment5;
 import java.util.*;
 public class LinearSearchRecursion 
 {
@@ -16,11 +15,10 @@ public class LinearSearchRecursion
     }
     public static boolean Search(int[] a,int x,int i)
     {
-        if(a[i]==x)
-            return true;
         if (i==a.length)
             return false;
-        
+        if(a[i]==x)
+            return true;                
         return Search(a,x,i+1);
     }
     

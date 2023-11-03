@@ -1,4 +1,3 @@
-package Assignment5;
 import java.util.*;
 public class BinarySearch
 {
