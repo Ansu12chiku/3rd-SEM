@@ -1,6 +1,5 @@
-
-import java.util.Scanner;
-public class deleteduplicates 
+import java.util.*;
+public class Deletedrepeated
 {
     public static void main(String[] args) 
     {
@@ -11,9 +10,8 @@ public class deleteduplicates
         for (int i = 0; i < n; i++)
             arr[i] = obj.nextInt();
         InsertionSort(arr);
-        deleteDuplicates(arr);
+        deletDup(arr);
         Print(arr);
-        System.out.println("First repeated element is :"+Repeat(arr));
     }
     public static void InsertionSort(int []a)
     {
@@ -29,22 +27,23 @@ public class deleteduplicates
             a[i+1]=k;
         }
     }
-    public static void deleteDuplicates(int[] a)
+    public static void deletDup(int []ar)
     {
-        for(int i=0,j=1;i<a.length-1;i++)
+        for(int i=0,j=1,k=1;i<ar.length-1;i++)
         {
-            if(a[i]==a[j])
-                
-            int temp=a[j];
-
-        }
-           
+            if(ar[i]!=ar[j])
+                ar[k++]=ar[i];
+            i=j;
+            
+        }           
     }
-    public static void print(int[] a)
+    public static void Print(int []arr)
     {
-        for(int i=0;i<a.length;i++)
+        for(int i=0;i<arr.length;i++)
         {
-            System.out.println(a[i]+" ");
+            System.out.println(arr[i]+" ");
         }
     }
 }
+
+
