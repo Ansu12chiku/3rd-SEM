@@ -9,7 +9,6 @@ public class BinarySearchRecursion
         int arr[] = new int[n];
         for (int i = 0; i < n; i++)
             arr[i] = obj.nextInt();
-        boolean found=false;
          System.out.print("Enter search element :");
         int key = obj.nextInt();
         System.out.println("Element present in the array : "+Search(arr,key,0,n-1));

@@ -1,69 +1,76 @@
-<html>
-    <head>
-        <title>Question-9</title>
-        <style>
-            body
-            {
-                text-align: left;
-                height: 4000px;
-                background-color:darkgrey;
-                width:max-content;
-            }
-            .d1
-            {
-            display: block;
-            height: 20px;
-            background-color: black; 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-9</title>
+    <style>
+       body{
+            height: 4000px;
+            width: 1500px;
+            background-color: rgb(247, 247, 247);
+            
+        }
+        .repeat{
+            background-image: url("tajmahal.jpeg");
+            background-repeat: repeat-x;
+        }
+        ul{
+            background-color:black;
             color: white;
-            padding: 10px 5px;
-            overflow: hidden;
-            text-decoration:none;
-            }
-            h2 {
-                color: red;
-                text-align: left;
-            }
-            .d2 {
-                display: inline;
-                width: 100px;
-                height: 40px;
-                padding: 100px;
-                text-align : center;
-            }
-            .d2 a 
-            {
-                color: white;
-            }
-            .hor
-            {
-                background-color: red;
-                text-align: left;
-                width: 50%;
-                height: 5%;
-
-            }
-            .image
-            {
-                height:200px ;
-            }
-
-        </style>
-    </head>
-    <body>
-        <div class="image">
-        <img src="tajmahal.jpeg">        
-        <div class="d1">
-        <div class="d2"><a href="#home">HOME</a></div>
-        <div class="d2"><a href="#service">SERVICE</a></div>
-        <div class="d2"><a href="#gallery">GALLERY</a></div>
-        <div class="d2"><a href="#aboutus">ABOUT US</a></div>
-        </div>
-        <h2>Taj Mahal</h2>        
-        <div class="hor">
-        </div>
+            list-style-type:none;
+            display: flex;
+            padding:0;
+            margin: 0;
+            position: sticky;
+            top: 0;
+            width: 1500px;
+        }
+        li{
+            display: block;
+            padding: 10px 8px 8px 50px;
+            width: 30%;
+            border-right:1px solid white;
+            font-family: 'Trebuchet MS';
+        }
+        li:hover {
+            background-color: antiquewhite;
+            color: rgb(230, 55, 55);
+        
+        }
+        h1{
+            color: red;
+        }
+        
+        #hr{
+            width: 1100px;
+            background-color:red;
+            height: 4px;
+        }
+        #im{
+            height: 500px;  
+            width: 1500px;  
+        }
+        p { width: 1400px;}
+    </style>
+</head>
+<body>
+    <div class="repeat">
+    <img id="im" src="tajmahal.jpeg">
+    </div>
+    <ul>
+        <li a href="#">HOME</a></li>
+        <li a href="#">SERVICES</a></li>
+        <li a href="#">GALLERY</a></li>
+        <li a herf="#">ABOUT US</a></li>
+    </ul>
+    <h1>Computer</h1>
+    <div id="hr">
+        <hr>
+    </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fugiat soluta dolores? Similique asperiores maxime molestias quidem! 
-            Adipisci sit ratione odit iure ducimus <br>
-             Nam molestiae nisi in non doloremque enim ipsum numquam vitae! Voluptate quo consequatur non est, facere iste.</p>
-        </div>
+            Adipisci sit ratione odit iure ducimus 
+             Nam molestiae nisi in non doloremque enim ipsum numquam vitae! Voluptate quo consequatur non est, facere iste.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iste commodi eaque voluptate asperiores, cumque temporibus recusandae mollitia, facere consequuntur totam odio adipisci. Amet error quis quisquam fugit quibusdam a?</p>
     </body>
 </html>

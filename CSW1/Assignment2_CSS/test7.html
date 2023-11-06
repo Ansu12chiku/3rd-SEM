@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+
+  <style>
+    
+    option:hover {
+      background-color: lime;
+    }
+  </style>
+
+  <body>
+    <select
+      name="languages"
+      id="language-select"
+      onfocus="this.size=6;"
+      onblur="this.size=0;"
+      onchange="this.size=1; this.blur()"
+    >
+      <option value="">--Choose an option--</option>
+      <option value="javascript">JavaScript</option>
+      <option value="typescript">TypeScript</option>
+      <option value="python">Python</option>
+      <option value="java">Java</option>
+      <option value="php">PHP</option>
+    </select>
+  </body>
+</html>

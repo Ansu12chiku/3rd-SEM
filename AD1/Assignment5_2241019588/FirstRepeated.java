@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class FirstRepeated 
 {
      public static void main(String[] args) 

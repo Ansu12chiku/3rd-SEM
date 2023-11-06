@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Question-10</title>
+    <style>
+        .d1{
+            display: block;
+            width: 400px;
+            height: 580px;
+            background-color: rgb(156, 170, 170);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: larger;
+            margin: 2%;      
+         }
+        .img{
+            width: 70px;
+        }
+        input,select {
+            border: 3px solid blue;
+            border-radius: 5px;
+            padding: 8px;
+            font-size: 20px;
+        }
+    input[type=submit] {
+	width: 100%;
+	background-color: orange;
+	color: brown;
+	padding: 12px 6px;
+	margin: 6px 4px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	}
+input[type=submit]:hover {
+	background-color: green;
+    color: aqua;
+	}
+    #st
+    {
+        width: 70%;
+    }
+    </style>
+</head>
+<body>
+    <div class="d1">
+        <div align="center">
+            <img src="soa.png" alt="SOA" class="img">
+            <h4>Registration</h4>
+        </div>
+        <form>
+            <label for="un">UserName</label>
+            <input type="text" id="un" placeholder="Enter name..." required><br><br>
+            <label for="email" style="padding-right: 30px;">Email</label>
+            <input type="text" id="un" placeholder="Enter email..." required><br><br>
+            <label for="un" style="padding-right: 18px;">Mobile</label>
+            <input type="number" id="un" placeholder="Enter MobileNo..." required><br><br>
+            
+            <label for="un" style="padding-right: 25px;">Gender</label>
+            <label for="un">Female</label>
+            <input type="radio" id="un" name="gender">
+            <label for="un">Male</label>
+            <input type="radio" id="un" name="gender"><br><br>
+            <label for="st" style="padding-right: 40px;">City</label>
+            <select name="city" id="st">
+                <option value=""hidden>Select City :</option>
+                <option value="ab">Cuttack</option>
+                <option value="cd">Bhubaneswar</option>
+                <option value="ef">Rourkela</option>
+            </select><br><br>
+            <label for="un" style="padding-right: 9px;">Password</label>
+            <input type="password" id="un" placeholder="Enter Password" required><br><br>
+            <input type="submit" value="Confirm">
+        </form>
+    </div>
+</body>
+</html>

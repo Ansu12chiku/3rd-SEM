@@ -4,78 +4,53 @@
     <meta charset="UTF-8">
     <title>Question 7</title>
     <style>
-        .dropdownbutton
+        #btn
         {
-            background-color: rgb(188, 134, 52);
-            color: white;
+            color: rgb(160, 23, 23);
             padding: 10px;
-            font-size: 20px;
-            border: 1px;
-            margin:25%;
+            font-size: 30px;
+            border: 2px solid rgb(174, 178, 245);
+            margin:5%;
             margin-bottom:0;
-        }
-        .dropdown
-        {
-            position:relative;
-            display: inline-block;
-            
-        }
-        .dropdown-content
-        {
-            display: none;
-            position: relative;
-            background-color: lightbrown;
-            width: 100%;
-            box-shadow: 0px 7px 14px 0px rgba(90, 88, 88, 0.9);
-            margin-left:25%;
-            
-        }       
-        .dropdown:hover .dropdown-content
-        {
-            display: block;
-            background-color: antiquewhite;
-            text-align: center;
-        }
-        .dropdown:hover .dropdownbutton
-        {
-            background-color: lightpink;
-        }
+        }      
         .list1
         {
-            font-weight: bold;
-            font-size: 30px;
+            color: cadetblue;
+            font-size: 40px;
         }
         .list2
         {
             font-family: 'Courier New';
-            font-size: 30px;
+            font-size: 50px;
+            font-weight: bold;
+            color: chocolate;
         }
         .list3
         {
-            font-style: italic;
             font-size: 30px;
+            font-style: oblique;
+            color: aquamarine;
         }
         .list4
         {
-            font-style: italic;
-            font-size: 20px;
+            font-family: fantasy;
+            font-size: 40px;
         }        
-        .list1:hover , .list2:hover , .list3:hover , .list4:hover 
+        option.list1:hover
         {
-            background-color:rgb(172, 255, 255);
-            color:rgb(190, 50, 78);
+            background-color:rgb(255, 172, 186);
+            color:rgb(50, 190, 115);
         }
     </style>
 </head>
 <body>
-    <div class="dropdown">
-        <button class="dropdownbutton">Branch</button>
-        <div class="dropdown-content">
-            <div class="list1">CSE</div>
-            <div class="list2">CSIT</div>
-            <div class="list3">ECE</div>
-            <div class="list4">ME</div>
-        </div>
-    </div>
+       <select name="dropdownbutton" id="btn">
+            <option value="">Choose Branch</option>         
+            <option value ="cse" class="list1">CSE</option>
+            <option value="csit" class="list2">CSIT</option>
+            <option value="eee" class="list3">EEE</option>
+            <option value="ece" class="list4">ECE</option>
+        </select>
+    
 </body>
 </html>

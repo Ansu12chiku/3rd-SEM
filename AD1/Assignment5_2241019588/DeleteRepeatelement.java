@@ -41,7 +41,6 @@ public class DeleteRepeatelement
                 uniqueArray[index++] = array[i];
             }
         }
-
         return uniqueArray;
     }
 }
