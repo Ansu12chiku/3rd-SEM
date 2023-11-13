@@ -9,9 +9,11 @@ public class Q1 {
             {
                 int mid = (low + high) / 2;
     
-                if (A[mid] < A[mid + 1]) {
+                if (A[mid] < A[mid + 1]) 
+                {
                     high = mid;
-                } else {
+                } else
+                {
                     low = mid + 1;
                 }
             }    
