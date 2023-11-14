@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question-3</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#field1").blur(function () {
+                alert("The field1 has blured and lost its focus");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <form>
+        <input id="field1" type="text" placeholder="Field 1">
+        <input id="field2" type="text" placeholder="Field 2">
+    </form>
+</body>
+</html>

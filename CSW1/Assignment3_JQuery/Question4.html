@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question-4</title>
+        <script src="jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                //var popup = document.getElementById("error");
+                $("button").click(function(){
+                    //popup.innerHTML = "<sp>This is an alert msg</span>"
+                    $("#popupbox-container").fadeIn("fast");
+                });
+            });
+        </script>
+        <style>
+              #popupbox-container {
+            display: none;
+            position: fixed;
+            border: 4px solid cadetblue;
+            border-radius: 15px;
+            margin: 30px;
+            padding:30px;
+            width: 250px;
+            height: 100px;
+            background-color: rgba(199, 248, 248, 0.7);
+            text-align: center;
+            color: blue;
+            font-size: 35px;
+            font-family: 'Franklin Gothic Medium';
+            }
+            button{
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+
+        }
+        </style>
+    </head>
+    <body>
+        <button>Press me for popup box</button><br>
+        <div id="popupbox-container">This is A Pop Up Box</div>
+    </body>
+</html>

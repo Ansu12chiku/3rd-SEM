@@ -15,7 +15,6 @@ public class MinMaxDifferencepair
     }
      public static void getMaxMinDiff(int[] A)
     {
-        int[] diffArrray =new int[4];
         int maxdif=Integer.MIN_VALUE;
         int mindif=Integer.MAX_VALUE;
         int maxfirst=0,minfirst=0,maxsec=0,minsec=0;
