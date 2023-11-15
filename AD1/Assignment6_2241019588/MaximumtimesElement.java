@@ -10,7 +10,7 @@ public class MaximumtimesElement
         int arr[] = new int[n];
         for (int i = 0; i < n; i++)
             arr[i] = obj.nextInt();
-            int maxcount=0,maxelement=0;
+        int maxcount=0,maxelement=0;
         for (int i = 0; i < n; i++)
         {
             int count=0;
@@ -26,7 +26,7 @@ public class MaximumtimesElement
                 maxelement=arr[i];
             }
         }
-        System.out.println("Maximum repeated is "+maxelement);
+        System.out.println("Maximum repeated is "+maxelement+" occurs "+maxcount);
     }
 }
 
