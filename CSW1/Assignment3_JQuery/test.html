@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#tb").append("<tr><td>Raool</td><td>16</td><td>CSE</td></tr>");
+            });
+            $("#btn2").click(function () {
+                $("#tb").css({ "color": "blue", "background-color": "cyan" });
+            });
+            $("#btn3").click(function () {
+                var idToRemove = $("#txt").val();
+                $("#" + idToRemove).remove();
+            });
+        });
+    </script>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid pink;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="tb">
+        <tr>
+            <th>Name</th>
+            <th>Section</th>
+            <th>Branch</th>
+        </tr>
+    </table>
+    <button id="btn1">Add row</button>
+    <button id="btn2">Change color</button>
+    <p>Enter the id: <input type="text" id="txt"></p>
+    <button id="btn3">Remove</button>
+</body>
+
+</html>
