@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+            font-family: "sans-serif";
+            text-align: center;
+            font-size: 30px;
+            background-color: aliceblue;
+            color: rgb(0, 115, 255);
+            }
+            .game-container 
+            {
+            width: 900px;
+            height: 600px;
+            background-color: rgb(162, 255, 255);
+            border: 4px solid salmon;
+            border-radius: 12px;
+            padding: 10px;
+            margin-left:312px;
+            box-shadow: 12px 12px rgb(50, 101, 255);
+            }        
+            button {
+                margin: 80px;
+                padding: 15px;
+                color: rgb(79, 165, 42);
+                font-weight: bold;
+                background-color: rgb(255, 234, 118);
+                font-size: 20px;
+                border-radius: 15px;
+                cursor: pointer;
+            }
+            #result,#myscore{
+                background-color: rgb(254, 252, 251);
+                display: block;
+                width: 600px;
+                margin-left: 120px;
+                font-size: 30px;
+                color: rgb(170, 0, 255);
+            }
+            #myscore
+            {
+                color: rgb(240, 36, 36);
+                font-weight: bold;
+            }
+        </style>
+        <script src="jquery.js"></script>
+        <script >
+            let userScore = 0;
+            let computerScore = 0;
+            function getScoresFromLocalStorage() {
+                const storedUserScore = localStorage.getItem("userScore");
+                const storedComputerScore = localStorage.getItem("computerScore");
+                if (storedUserScore !== null && storedComputerScore !== null) 
+                {
+                    userScore = parseInt(storedUserScore);
+                    computerScore = parseInt(storedComputerScore);
+                    updateScoreDisplay();
+                }
+            }
+            function updateScoresInLocalStorage(){
+                localStorage.setItem("userScore", userScore);
+                localStorage.setItem("computerScore", computerScore);
+            }
+            function updateScoreDisplay() {
+                $("#myscore").text("Your Score:"+userScore);
+                $("#myscore").append("<br>Computer Score:"+computerScore);
+                if(userScore>computerScore)
+                        $("#myscore").append("<br> You are Winning");
+                    else if(userScore<computerScore)
+                        $("#myscore").append("<br> Computer is Winning");
+                    else
+                    $("#myscore").append("<br> Tie Between both");
+            }
+            $(document).ready(function() {
+                getScoresFromLocalStorage();        
+                $(".choices button").on("click",function() {
+                    var userChoice = $(this).attr("id");
+                    const computerChoice = getComputerChoice();
+                    const result = getResult(userChoice, computerChoice);                
+                    updateScore(result);        
+                    $("#result").text("You chose: "+ userChoice);
+                    $("#result").append("<br>Computer chose : "+computerChoice);
+                    $("#result").append("<br>"+result)
+                    updateScoreDisplay();
+                    updateScoresInLocalStorage();                    
+                });
+            });
+            function getComputerChoice(){
+                const choices = ["Rock", "Paper", "Scissors"];
+                return choices[Math.floor(Math.random() * 3)];
+            }
+            function getResult(user, computer) {
+                if (user == computer) {
+                    return "It\"s a tie!";
+                } else if ((user == "Rock" && computer == "Scissors") ||
+                        (user == "Paper" && computer == "Rock") ||
+                        (user == "Scissors" && computer == "Paper")) {
+                    return "You win!";
+                } else {
+                    return "You lose!";
+                }
+            }        
+            function updateScore(result) {
+                if (result == "You win!") {
+                    userScore++;
+                } else if (result == "You lose!") {
+                    computerScore++;
+                }
+            }
+            </script>
+        <title>Rock Paper Scissors</title>
+    </head>
+    <body>
+        <div class="game-container">
+            <h3>Choose: Rock, Paper, or Scissors</h3>
+            <div class="choices">
+                <button id="Rock">Rock</button>
+                <button id="Paper">Paper</button>
+                <button id="Scissors">Scissors</button>
+            </div>
+            <div id="result"></div>
+            <div id="myscore"></div>
+        </div>
+    </body>
+</html>

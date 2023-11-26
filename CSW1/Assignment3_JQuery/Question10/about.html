@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    .team-member-content {
+      display: none;
+      background-color: antiquewhite;
+      color: blueviolet;
+      font-size: 25px;
+      width:500px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>About Us</h1>
+
+  <div class="team-member" id="team-member-1">
+    <h2>Team Member 1</h2>
+    <p class="team-member-content">
+     Mr. Parimal Pattnaik is the team leader
+     the page was developed and maintained by him
+    </p>
+    <button onclick="toggleContent('team-member-1')">+</button>
+  </div>
+
+  <div class="team-member" id="team-member-2">
+    <h2>Team Member 2</h2>
+    <p class="team-member-content">
+      Content for Team Member 2.
+    </p>
+    <button onclick="toggleContent('team-member-2')">+</button>
+  </div>
+  <script>
+    function toggleContent(memberId) {
+      var content = document.getElementById(memberId).getElementsByClassName('team-member-content')[0];
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+      } else {
+        content.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>

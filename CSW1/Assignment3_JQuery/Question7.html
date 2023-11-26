@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+    <title>Question-7</title>
+    <script src="jquery.js"></script>
+    <script>
+    $(document).ready(function() {
+            $("#myForm").submit(function(event){
+                event.preventDefault();
+                $("#error-box").html("");
+                var username = $("#name").val();
+                var email = $("#email").val();
+                if (username == ""||username==null||email == ""||email==null) {
+                    $("#error-box").html("All fields must be filled out");
+                    return;
+                }
+                alert("Form submitted successfully!");
+                $("#myForm")[0].reset(); 
+                //reset is a jquery function used to reset the form after submitting it
+            });
+        });
+</script>
+    <style>
+        body{
+            background-color:rgb(226, 250, 250);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        form{
+            width: 100%;
+            max-width: 500px;
+            margin: 8% auto;
+            color: rgb(0, 7, 139);
+            font-size: larger;
+            padding: 20px;
+            border: 3px solid #e87676;
+            background-color: rgba(220, 248, 174, 0.438);
+            border-radius: 10px;
+            box-shadow: 12px 15px rgba(95, 26, 26,90);
+        }
+        input{
+            width: 75%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;            
+        }
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+            margin-left: 75px;
+        }
+        input[type="submit"]:hover {
+            background-color: rgb(7, 125, 131);
+        }
+        .error{
+            color: rgb(250, 67, 67);
+            margin-top: 5px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <form id="myForm">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" value="" placeholder="Your name..." >
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" value="" placeholder="Your email...">
+        <input type="submit" value="Submit">
+        <div id="error-box" class="error"></div>
+    </form>
+</body>
+
+</html>

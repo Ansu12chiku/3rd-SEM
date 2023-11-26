@@ -1,0 +1,88 @@
+<title>Contanct us form</title>
+<script src="jquery.js"></script>
+<script >
+    $(document).ready(function() {
+        $('#contactForm').submit(function(e) {
+            e.preventDefault();    
+            $('#errorMessages').empty();    
+            let isValid = true;    
+            const name = $('#name').val();
+            const email = $('#email').val();
+            const message = $('#message').val();
+            if (name == '') {
+                $('#errorMessages').append('<p>This field is required: Name</p>');
+                isValid = false;
+            }    
+            if (email == '') {
+                $('#errorMessages').append('<p>This field is required: Email Address</p>');
+                isValid = false;
+            }    
+            if (message == '') {
+                $('#errorMessages').append('<p>This field is required: Message</p>');
+                isValid = false;
+            }    
+            if (isValid) 
+            {
+                alert('Form submitted successfully!');
+            }
+            else
+            {
+                alert('Fill Out All fields');  
+            }
+        });
+    });
+    </script>
+    <style>
+        #errorMessages{
+            color:red;
+            font-size: 25px;            
+        }
+        body{
+            background-color:rgb(226, 250, 250);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        form{
+            width: 600px;
+            color: rgb(0, 7, 139);
+            font-size: 20px;
+            padding: 20px;
+            border: 3px solid #e87676;
+            background-color: rgba(220, 248, 174, 0.438);
+            border-radius: 10px;
+            box-shadow: 12px 15px rgba(95, 26, 26,90);
+        }
+        input,textarea{
+            width: 75%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;            
+        }
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+            margin-left: 75px;
+        }
+        input[type="submit"]:hover {
+            background-color: rgb(7, 125, 131);
+        }
+    </style>
+    <div class="page-content">
+    <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+    <div id="errorMessages"></div>
+</div>

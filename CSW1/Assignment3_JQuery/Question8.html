@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="jquery.js"></script>
+  <title>Question-8</title>
+  <script>
+    $(document).ready(function(){
+      $("#applyFilter").click(function(){
+        var value = $("#categoryFilter").val().toLowerCase();
+        $("#myTable tr").filter(function(){
+          $(this).toggle($(this).find('td:nth-child(2)').text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+  </script>
+  <style>
+    body{
+      background: rgb(87, 193, 205);
+      font-size: 20px;
+    }
+    table {
+      font-family: "sans-serif";
+      border-collapse: collapse;
+      width: 80%;
+      margin-left: 30px;
+    }
+    td,th{
+      border: 3px solid rgb(245, 166, 47);
+      text-align: center;
+      padding: 8px;
+      background-color: rgb(215, 247, 247);
+      color: darkmagenta;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>JOB LISTINGS</h2>
+  <div>
+    <label for="categoryFilter">Filter by Category:</label>
+    <select id="categoryFilter">
+        <option value="Software">Software</option>
+        <option value="Design">Design</option>
+        <option value="Media">Media</option>
+        <option value="Hotel & Travel">Hotel and Travel</option>
+        <option value="Market">Market</option>
+    </select>
+    <button id="applyFilter">Apply Filter</button>
+  </div><br>
+  <table id="myTable">
+      <tr>
+        <th>Sl No.</th>
+        <th>Job Category</th>
+        <th>Job </th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Software</td>
+        <td>ios Developer</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Software</td>
+        <td>Network Administrator</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Design</td>
+        <td>Game Designer</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Hotel & Travel</td>
+        <td>Chef</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Hotel & Travel</td>
+        <td>Event Planner</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Design</td>
+        <td>Fashion Designer</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Design</td>
+        <td>Multimedia Artist</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Media</td>
+        <td>Journalist</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Media</td>
+        <td>Content Creator</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Market</td>
+        <td>Market Research Analyst</td>
+      </tr>
+
+
+      <tr>
+        <td>11</td>
+        <td>Software</td>
+        <td>QA Engineer</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>Software</td>
+        <td>UX/UI Designing</td>
+      </tr>
+
+      <tr>
+        <td>13</td>
+        <td>Hotel & Travel</td>
+        <td>Hotel Manager</td>
+      </tr>
+      
+      <tr>
+        <td>14</td>
+        <td>Market</td>
+        <td>Brand Manager</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>Market</td>
+        <td>Social Media Coordinator</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>Media</td>
+        <td>Photojournalist</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>Market</td>
+        <td>SEO Specialist</td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>Software</td>
+        <td>Server Maintance</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>Software</td>
+        <td>Database Engineer</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>Design</td>
+        <td>Industrial Designer</td>
+      </tr>
+      <tr>
+        <td>21</td>
+        <td>Design</td>
+        <td>Motion Graphics Artist</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>Media</td>
+        <td>Public Relations Specialist</td>
+      </tr>
+      <tr>
+        <td>23</td>
+        <td>Media</td>
+        <td>Broadcast Producer</td>
+      </tr>
+      <tr>
+        <td>24</td>
+        <td>Software</td>
+        <td>Data Scientist</td>
+      </tr>
+      <tr>
+        <td>25</td>
+        <td>Software</td>
+        <td>Cybersecurity Analyst</td>
+      </tr>
+      <tr>
+        <td>26</td>
+        <td>Software</td>
+        <td>IT Project Manager</td>
+      </tr>
+      <tr>
+        <td>27</td>
+        <td>Hotel & Travel</td>
+        <td>Front Desk Agent</td>
+      </tr>
+      <tr>
+        <td>28</td>
+        <td>Hotel & Travel</td>
+        <td>Travel Agent</td>
+      </tr>
+      <tr>
+        <td>29</td>
+        <td>Hotel & Travel</td>
+        <td>Catering Coordinator</td>
+      </tr>
+      <tr>
+        <td>30</td>
+        <td>Design</td>
+        <td>Art Director</td>
+      </tr>
+      
+      <tr>
+        <td>31</td>
+        <td>Media</td>
+        <td>Video Editor</td>
+      </tr>
+      
+      <tr>
+        <td>32</td>
+        <td>Media</td>
+        <td>Social Media Manager</td>
+      </tr>
+      <tr>
+        <td>33</td>
+        <td>Media</td>
+        <td>Copywriter</td>
+      </tr>
+
+      <tr>
+        <td>34</td>
+        <td>Software</td>
+        <td>Graphic Designing</td>
+      </tr>
+      <tr>
+        <td>35</td>
+        <td>Market</td>
+        <td>Content Strategist</td>
+      </tr>
+      <tr>
+        <td>36</td>
+        <td>Market</td>
+        <td>Public Relations Manager</td>
+      </tr>
+      <td>37</td>
+      <td>Hotel & Travel</td>
+      <td>Concierge</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>Hotel & Travel</td>
+      <td>Banquet Server</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>Market</td>
+      <td>Marketing Manager</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>Market</td>
+      <td>Copywriter</td>
+    </tr>
+      <tr>
+        <td>40</td>
+        <td>Media</td>
+        <td>News Anchor</td>
+      </tr>
+      <tr>
+        <td>41</td>
+        <td>Media</td>
+        <td>Newspaper Article</td>
+      </tr>
+      <tr>
+        <td>42</td>
+        <td>Market</td>
+        <td>Digital Marketing Specialist</td>
+      </tr>
+      <tr>
+        <td>43</td>
+        <td>Market</td>
+        <td>Event Coordinator</td>
+      </tr>
+      <tr>
+        <td>44</td>
+        <td>Hotel & Travel</td>
+        <td>Restaurant Manager</td>
+      </tr>
+      <tr>
+        <td>45</td>
+        <td>Hotel & Travel</td>
+        <td>Housekeeping Supervisor</td>
+      </tr>
+      <tr>
+    <tr>
+        <td>46</td>
+        <td>Design</td>
+        <td>Web frameset Designer</td>
+        </tr>
+       
+  </table>
+</body>
+
+</html>
